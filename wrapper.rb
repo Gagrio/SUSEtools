@@ -12,14 +12,15 @@ read $tag
 
 puts 'Step 1: Checking SCCcredentials'
 if(File.exist?('SCCcredentials'))
-   puts 'file SCCcredentials exists'
+   puts 'OK'
 else
    puts 'SCCcredentials file not found, please create one with your SCC credentials'
+   exit
 end
 
 puts 'Step 2: Checking Dockerfile'
 if(File.exist?('Dockerfile'))
-   puts 'Dockerfile exists'
+   puts 'OK'
 else
    puts 'Dockerfile not found, exiting...'
    exit
