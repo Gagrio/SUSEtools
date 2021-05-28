@@ -1,14 +1,14 @@
-### Docker image building script
+## Docker image building script
 - What is this?
-- This is a docker image building script to help with building DOCKER_BUILDKIT images with SCC Credentials.
+>  This is a docker image building script to help with building DOCKER_BUILDKIT images with SCC Credentials.
 - How does it work?
-- The script has a few requirements:
-  - It needs to be in the same directory with Dockerfile and SCCcredentials file
-  - The Dockerfile must be tagged for DOCKER_BUILDKIT (in first line)
-  - It needs to have exactly two parameters from command line:
-    - the image name
-    - the tag name
-  Once all requirements are met it simply builds the image for you.
+> The script has a few requirements:
+>  - It needs to be in the same directory with Dockerfile and SCCcredentials file
+>  - The Dockerfile must be tagged for DOCKER_BUILDKIT (in first line)
+>  - It needs to have exactly two parameters from command line:
+>    - the image name
+>    - the tag name
+>  Once all requirements are met it simply builds the image for you.
 - Example usage:
 ```
 [george@localhost: ~/suse-it-wiki/suse-docker-image]$  ruby image-builder.rb gagrio1885/suse-wiki-1_27_7 latest
@@ -54,7 +54,7 @@ Step 3: Checking BUILDKIT syntax requirements
  => => writing image sha256:261498528971616a8bca62b08d0e196df731011c773ed2eb09619880e07ac259                                                          0.0s 
  => => naming to docker.io/gagrio1885/suse-wiki-1_27_7:latest                                                                                         0.0s 
 ```
-## To do - enhancements
+### To do - enhancements
 - Print usage
 - Better messages maybe
 - Leave your comment below
