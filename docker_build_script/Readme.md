@@ -57,6 +57,7 @@ Step 3: Checking BUILDKIT syntax requirements
 ### To do - enhancements
 - Print usage
 - Better messages maybe
+- make `--no-cache --pull` optional
 - Leave your comment below
 - Like and subscribe
 - Woops that's from different platform
