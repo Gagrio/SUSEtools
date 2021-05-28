@@ -1,5 +1,4 @@
-#!/usr/bin/ruby -w
-
+#!/usr/bin/ruby
 # Add comments explaining how it works.
 
 # Add check for first argument,use that for image name, else ask for image name
