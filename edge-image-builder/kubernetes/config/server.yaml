@@ -1,0 +1,7 @@
+---
+token: null
+write-kubeconfig-mode: '0644'
+cni:
+  - multus
+  - cilium
+selinux: true
