@@ -4,7 +4,7 @@ image:
   arch: aarch64
   imageType: iso # raw
   baseImage: SL-Micro.aarch64-6.0-Base-SelfInstall-GM2.install.iso # SL-Micro.aarch64-6.0-Default-GM2.raw
-  outputImageName: rke2-ha.raw
+  outputImageName: rke2-ha.iso
 operatingSystem:
   isoConfiguration:
     installDevice: /dev/vda
