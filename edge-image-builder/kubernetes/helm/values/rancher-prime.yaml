@@ -1,0 +1,5 @@
+---
+hostname: "cia.sslip.io" 
+replicas: 1
+bootstrapPassword: Admin
+global.cattle.psp.enabled: "false"
