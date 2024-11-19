@@ -1,5 +1,5 @@
 ---
-local_path: "/Users/geoagriogiannis/eib"
-container_volume: "/eib"
-yaml_file: "eib.yaml" # does not yet support absolute path, please execute script from withing the eib directory
-registry_image: "registry.suse.com/edge/3.1/edge-image-builder:1.1.0"
+local_path: "/Users/geoagriogiannis/elemental"
+# container_volume: "/eib" # this is hardcoded, do not change
+yaml_file: "elemental.yaml" # does not yet support absolute path, please execute script from withing the eib directory
+registry_image: "registry.suse.com/edge/3.1/edge-image-builder:1.1.0" # this is not hardcoded, but it's the actual registry, so not expected to change

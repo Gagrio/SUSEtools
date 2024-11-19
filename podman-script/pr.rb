@@ -60,10 +60,10 @@ if local_path.empty?
   exit 1
 end
 
-if container_volume.empty?
-  puts "Error: Container volume is required."
-  exit 1
-end
+# if container_volume.empty?
+#   puts "Error: Container volume is required."
+#   exit 1
+# end
 
 if yaml_file.empty?
   puts "Error: YAML file is required."
@@ -80,7 +80,7 @@ puts "Loaded configuration from #{CONFIG_FILE}:"
 puts YAML.dump(config)
 
 # Construct the podman command
-command = "podman run --rm -it --privileged -v #{local_path}:#{container_volume} #{registry_image} build --definition-file #{yaml_file}"
+command = "podman run --rm -it --privileged -v #{local_path}:/eib #{registry_image} build --definition-file #{yaml_file}" # container image hardcoded for eib
 
 # Print the command for debugging
 puts "Executing this command:"
